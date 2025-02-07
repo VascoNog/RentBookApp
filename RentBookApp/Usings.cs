@@ -1,0 +1,12 @@
+﻿//global using FluentResults;
+global using Microsoft.AspNetCore.Identity;
+global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.Mvc.RazorPages;
+global using Microsoft.EntityFrameworkCore;
+global using RentBookApp.Data;
+global using RentBookApp.Data.Entities;
+global using RentBookApp.Data.Repositories;
+global using Microsoft.AspNetCore.Authorization;
+global using Microsoft.AspNetCore.Mvc.Rendering;
+global using FluentResults;
