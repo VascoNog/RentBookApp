@@ -1,8 +1,10 @@
 ﻿@page
+@using System.Security.Claims
 @model RentBookApp.Pages.AllBooks.IndexModel
 
 @{
     ViewData["Title"] = "Index";
+    var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 }
 
 <h1>Index</h1>
@@ -60,12 +62,22 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Author.AuthorName)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
+                <td>
+                        @if (item.UserId == userId)
+                        {
+                        <td>
+                            <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                            <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                            <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                        </td>
+                        }
+                        else
+                        {
+                        <td>
+                            <a asp-page="./Details" asp-route-id="@item.Id">Details</a>
+                        </td>
+                        }
+                </td>
         </tr>
 }
     </tbody>

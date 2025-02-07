@@ -15,7 +15,7 @@ public class EditModel : PageModel
         if (id == null)
             return NotFound();
         var book =  await _bookRepository.GetBookAsync(id.Value);
-        if (book == null)
+        if (book is null)
             return NotFound();
 
         Book = book;

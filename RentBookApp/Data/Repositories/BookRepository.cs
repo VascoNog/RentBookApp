@@ -1,4 +1,6 @@
-﻿namespace RentBookApp.Data.Repositories;
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace RentBookApp.Data.Repositories;
 
 public class BookRepository
 {
@@ -42,6 +44,23 @@ public class BookRepository
         catch
         {
             return Result.Fail("Error Updating Book");
+        }
+    }
+
+    //public async void RemoveBookAsyncAndSaveChanges(int id)
+    //{
+    //    var book = await _ctx.Books.FirstOrDefaultAsync(b => b.Id == id);
+    //    _ctx.Books.Remove(book);
+    //    await _ctx.SaveChangesAsync();
+    //}
+
+    public async Task RemoveBookAsyncAndSaveChanges(int id)
+    {
+        var book = await _ctx.Books.FirstOrDefaultAsync(b => b.Id == id);
+        if (book != null)
+        {
+            _ctx.Books.Remove(book);
+            await _ctx.SaveChangesAsync();
         }
     }
 }
