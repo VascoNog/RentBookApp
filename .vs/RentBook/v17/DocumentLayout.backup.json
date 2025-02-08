@@ -3,6 +3,78 @@
   "WorkspaceRootPath": "D:\\ReStart_Pessoal\\RentBook\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\data\\entities\\rental.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\data\\entities\\rental.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\data\\rentbookdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\data\\rentbookdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\pages\\allrentals\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\pages\\allrentals\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\pages\\allrentals\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\pages\\allrentals\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\migrations\\20250206230028_fix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\migrations\\20250206230028_fix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\pages\\allrentals\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\pages\\allrentals\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\pages\\allrentals\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\pages\\allrentals\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\pages\\allrentals\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\pages\\allrentals\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\pages\\allrentals\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\pages\\allrentals\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\pages\\allrentals\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\pages\\allrentals\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\pages\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\pages\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\pages\\allrentals\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\pages\\allrentals\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\pages\\allrentals\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\pages\\allrentals\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\pages\\allrentals\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\pages\\allrentals\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\pages\\allbooks\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\pages\\allbooks\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\pages\\allbooks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\pages\\allbooks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\pages\\allbooks\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\pages\\allbooks\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\data\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\data\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,10 +87,6 @@
       "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\pages\\allbooks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\pages\\allbooks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\pages\\allbooks\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\pages\\allbooks\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,20 +95,8 @@
       "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\pages\\allbooks\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\pages\\allbooks\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\pages\\allbooks\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\data\\rentbookdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\data\\rentbookdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\pages\\allbooks\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\pages\\allbooks\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|solutionrelative:rentbookapp\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{77129159-492C-42F2-AA80-639FCC32E6B2}|RentBookApp\\RentBookApp.csproj|d:\\restart_pessoal\\rentbook\\rentbookapp\\pages\\allbooks\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -54,11 +110,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 17,
               "Title": "Edit.cshtml.cs",
               "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllBooks\\Edit.cshtml.cs",
               "RelativeDocumentMoniker": "RentBookApp\\Pages\\AllBooks\\Edit.cshtml.cs",
@@ -80,7 +136,215 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250206230028_fix.cs",
+              "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Migrations\\20250206230028_fix.cs",
+              "RelativeDocumentMoniker": "RentBookApp\\Migrations\\20250206230028_fix.cs",
+              "ToolTip": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Migrations\\20250206230028_fix.cs",
+              "RelativeToolTip": "RentBookApp\\Migrations\\20250206230028_fix.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T20:10:35.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Rental.cs",
+              "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Data\\Entities\\Rental.cs",
+              "RelativeDocumentMoniker": "RentBookApp\\Data\\Entities\\Rental.cs",
+              "ToolTip": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Data\\Entities\\Rental.cs",
+              "RelativeToolTip": "RentBookApp\\Data\\Entities\\Rental.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T20:09:12.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllRentals\\Create.cshtml",
+              "RelativeDocumentMoniker": "RentBookApp\\Pages\\AllRentals\\Create.cshtml",
+              "ToolTip": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllRentals\\Create.cshtml",
+              "RelativeToolTip": "RentBookApp\\Pages\\AllRentals\\Create.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-08T19:56:51.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllRentals\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "RentBookApp\\Pages\\AllRentals\\Create.cshtml.cs",
+              "ToolTip": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllRentals\\Create.cshtml.cs",
+              "RelativeToolTip": "RentBookApp\\Pages\\AllRentals\\Create.cshtml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAUwBQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T19:56:51.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllRentals\\Index.cshtml",
+              "RelativeDocumentMoniker": "RentBookApp\\Pages\\AllRentals\\Index.cshtml",
+              "ToolTip": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllRentals\\Index.cshtml",
+              "RelativeToolTip": "RentBookApp\\Pages\\AllRentals\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-08T19:56:52.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllRentals\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "RentBookApp\\Pages\\AllRentals\\Delete.cshtml.cs",
+              "ToolTip": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllRentals\\Delete.cshtml.cs",
+              "RelativeToolTip": "RentBookApp\\Pages\\AllRentals\\Delete.cshtml.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAIwBYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T19:56:52.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllRentals\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "RentBookApp\\Pages\\AllRentals\\Index.cshtml.cs",
+              "ToolTip": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllRentals\\Index.cshtml.cs",
+              "RelativeToolTip": "RentBookApp\\Pages\\AllRentals\\Index.cshtml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAgwBIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T19:56:53.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RentBookDbContext.cs",
+              "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Data\\RentBookDbContext.cs",
+              "RelativeDocumentMoniker": "RentBookApp\\Data\\RentBookDbContext.cs",
+              "ToolTip": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Data\\RentBookDbContext.cs",
+              "RelativeToolTip": "RentBookApp\\Data\\RentBookDbContext.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAmwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T23:04:11.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllRentals\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "RentBookApp\\Pages\\AllRentals\\Edit.cshtml.cs",
+              "ToolTip": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllRentals\\Edit.cshtml.cs",
+              "RelativeToolTip": "RentBookApp\\Pages\\AllRentals\\Edit.cshtml.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAIwBcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T19:56:52.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "RentBookApp\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "RentBookApp\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-07T20:46:53.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllRentals\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "RentBookApp\\Pages\\AllRentals\\Details.cshtml.cs",
+              "ToolTip": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllRentals\\Details.cshtml.cs",
+              "RelativeToolTip": "RentBookApp\\Pages\\AllRentals\\Details.cshtml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAIwBUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T19:56:52.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllRentals\\Edit.cshtml",
+              "RelativeDocumentMoniker": "RentBookApp\\Pages\\AllRentals\\Edit.cshtml",
+              "ToolTip": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllRentals\\Edit.cshtml",
+              "RelativeToolTip": "RentBookApp\\Pages\\AllRentals\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-08T19:56:51.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllRentals\\Details.cshtml",
+              "RelativeDocumentMoniker": "RentBookApp\\Pages\\AllRentals\\Details.cshtml",
+              "ToolTip": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllRentals\\Details.cshtml",
+              "RelativeToolTip": "RentBookApp\\Pages\\AllRentals\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-08T19:56:52.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllRentals\\Delete.cshtml",
+              "RelativeDocumentMoniker": "RentBookApp\\Pages\\AllRentals\\Delete.cshtml",
+              "ToolTip": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllRentals\\Delete.cshtml",
+              "RelativeToolTip": "RentBookApp\\Pages\\AllRentals\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-08T19:56:52.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "RentBookApp\\Pages\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "RentBookApp\\Pages\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-08T19:57:27.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllBooks\\Details.cshtml",
+              "RelativeDocumentMoniker": "RentBookApp\\Pages\\AllBooks\\Details.cshtml",
+              "ToolTip": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllBooks\\Details.cshtml",
+              "RelativeToolTip": "RentBookApp\\Pages\\AllBooks\\Details.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-08T19:40:25.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllBooks\\Delete.cshtml",
               "RelativeDocumentMoniker": "RentBookApp\\Pages\\AllBooks\\Delete.cshtml",
@@ -88,12 +352,11 @@
               "RelativeToolTip": "RentBookApp\\Pages\\AllBooks\\Delete.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-07T22:01:47.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T22:01:47.552Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 21,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllBooks\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "RentBookApp\\Pages\\AllBooks\\Index.cshtml.cs",
@@ -101,25 +364,24 @@
               "RelativeToolTip": "RentBookApp\\Pages\\AllBooks\\Index.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T20:15:46.313Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T20:15:46.313Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 16,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllBooks\\Index.cshtml",
               "RelativeDocumentMoniker": "RentBookApp\\Pages\\AllBooks\\Index.cshtml",
               "ToolTip": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllBooks\\Index.cshtml",
               "RelativeToolTip": "RentBookApp\\Pages\\AllBooks\\Index.cshtml",
-              "ViewState": "AgIAACYAAAAAAAAAAAAQwAwAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-07T20:09:34.729Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 20,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "RentBookApp\\Pages\\Index.cshtml",
@@ -127,12 +389,11 @@
               "RelativeToolTip": "RentBookApp\\Pages\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-07T20:09:30.442Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T20:09:30.442Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 19,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllBooks\\Create.cshtml",
               "RelativeDocumentMoniker": "RentBookApp\\Pages\\AllBooks\\Create.cshtml",
@@ -140,37 +401,11 @@
               "RelativeToolTip": "RentBookApp\\Pages\\AllBooks\\Create.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-07T20:01:21.168Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-07T20:01:21.168Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BookRepository.cs",
-              "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Data\\Repositories\\BookRepository.cs",
-              "RelativeDocumentMoniker": "RentBookApp\\Data\\Repositories\\BookRepository.cs",
-              "ToolTip": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Data\\Repositories\\BookRepository.cs",
-              "RelativeToolTip": "RentBookApp\\Data\\Repositories\\BookRepository.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAewEEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T19:15:23.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RentBookDbContext.cs",
-              "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Data\\RentBookDbContext.cs",
-              "RelativeDocumentMoniker": "RentBookApp\\Data\\RentBookDbContext.cs",
-              "ToolTip": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Data\\RentBookDbContext.cs",
-              "RelativeToolTip": "RentBookApp\\Data\\RentBookDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-07T23:04:11.228Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 23,
               "Title": "Delete.cshtml.cs",
               "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllBooks\\Delete.cshtml.cs",
               "RelativeDocumentMoniker": "RentBookApp\\Pages\\AllBooks\\Delete.cshtml.cs",
@@ -182,19 +417,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "RentBookApp\\Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "RentBookApp\\Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-07T20:46:53.426Z"
+              "DocumentIndex": 18,
+              "Title": "BookRepository.cs",
+              "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Data\\Repositories\\BookRepository.cs",
+              "RelativeDocumentMoniker": "RentBookApp\\Data\\Repositories\\BookRepository.cs",
+              "ToolTip": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Data\\Repositories\\BookRepository.cs",
+              "RelativeToolTip": "RentBookApp\\Data\\Repositories\\BookRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAEwBsAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T19:15:23.727Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 24,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\ReStart_Pessoal\\RentBook\\RentBookApp\\Pages\\AllBooks\\Edit.cshtml",
               "RelativeDocumentMoniker": "RentBookApp\\Pages\\AllBooks\\Edit.cshtml",

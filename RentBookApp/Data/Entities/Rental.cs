@@ -2,7 +2,7 @@
 
 namespace RentBookApp.Data.Entities;
 
-public class Rentals
+public class Rental
 {
     public int Id { get; set; }
     public DateTime RentedAt { get; set; }

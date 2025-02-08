@@ -52,6 +52,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxsQm9va3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ReStart_Pessoal/RentBook/RentBookApp/Pages/AllRentals/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxsUmVudGFsc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ReStart_Pessoal/RentBook/RentBookApp/Pages/AllRentals/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxsUmVudGFsc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ReStart_Pessoal/RentBook/RentBookApp/Pages/AllRentals/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxsUmVudGFsc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ReStart_Pessoal/RentBook/RentBookApp/Pages/AllRentals/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxsUmVudGFsc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ReStart_Pessoal/RentBook/RentBookApp/Pages/AllRentals/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxsUmVudGFsc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ReStart_Pessoal/RentBook/RentBookApp/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

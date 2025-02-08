@@ -9,7 +9,7 @@ public class RentBookDbContext : IdentityDbContext
     }
 
     public DbSet<Book> Books { get; set; }
-    public DbSet<Rentals> Rentals { get; set; }
+    public DbSet<Rental> Rentals { get; set; }
     public DbSet<Book> Authors { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -27,7 +27,7 @@ public class RentBookDbContext : IdentityDbContext
         });
 
         //Rentals Configurations
-        modelBuilder.Entity<Rentals>(entity =>
+        modelBuilder.Entity<Rental>(entity =>
         {
             entity.Property(e => e.RentedAt).IsRequired().HasColumnType("datetime2(0)");
         });
