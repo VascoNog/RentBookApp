@@ -24,12 +24,14 @@ public class RentBookDbContext : IdentityDbContext
             entity.Property(e => e.PublishedAt).IsRequired().HasColumnType("date"); // Só interessa a data
             entity.Property(e => e.ISBN).IsRequired().HasColumnType("nvarchar(15)");
             entity.HasIndex(e => e.ISBN).IsUnique();
+            entity.Property(e => e.IsAvailable).IsRequired();
         });
 
         //Rentals Configurations
         modelBuilder.Entity<Rental>(entity =>
         {
             entity.Property(e => e.RentedAt).IsRequired().HasColumnType("datetime2(0)");
+            entity.Property(e => e.ReturnedAt).HasColumnType("datetime2(0)");
         });
 
         // Authors Configurations

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RentBookApp.Data;
 
@@ -11,9 +12,11 @@ using RentBookApp.Data;
 namespace RentBookApp.Migrations
 {
     [DbContext(typeof(RentBookDbContext))]
-    partial class RentBookDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250209171053_AddDateTimeAsNullableForReturnedAt")]
+    partial class AddDateTimeAsNullableForReturnedAt
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -264,9 +267,6 @@ namespace RentBookApp.Migrations
                     b.Property<string>("ISBN")
                         .IsRequired()
                         .HasColumnType("nvarchar(15)");
-
-                    b.Property<bool>("IsAvailable")
-                        .HasColumnType("bit");
 
                     b.Property<DateOnly>("PublishedAt")
                         .HasColumnType("date");

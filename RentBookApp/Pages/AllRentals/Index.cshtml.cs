@@ -1,20 +1,15 @@
-﻿namespace RentBookApp.Pages.AllRentals;
+﻿namespace RentBookApp.Pages.AddRentals;
 
 public class IndexModel : PageModel
 {
-    private readonly RentBookApp.Data.RentBookDbContext _context;
+    private readonly BookRepository _bookRepository;
+    public IndexModel(BookRepository bookRepository) => _bookRepository = bookRepository;
 
-    public IndexModel(RentBookApp.Data.RentBookDbContext context)
-    {
-        _context = context;
-    }
 
     public IList<Rental> Rentals { get;set; } = default!;
 
     public async Task OnGetAsync()
     {
-        Rentals = await _context.Rentals
-            .Include(r => r.Book)
-            .Include(r => r.User).ToListAsync();
+        Rentals = await _bookRepository.GetAllRentalsAsync();
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Security.Claims;
+﻿using NuGet.Packaging.Signing;
+using System.Security.Claims;
 
 namespace RentBookApp.Pages.AllBooks;
 
@@ -26,6 +27,7 @@ public class CreateModel : PageModel
         }
 
         Book.UserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        Book.IsAvailable = true;
 
         await _bookRepository.AddBook(Book);
 

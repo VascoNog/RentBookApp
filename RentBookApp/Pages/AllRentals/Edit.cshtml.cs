@@ -1,79 +1,78 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using RentBookApp.Data;
-using RentBookApp.Data.Entities;
+﻿namespace RentBookApp.Pages.AddRentals;
 
-namespace RentBookApp.Pages.AllRentals
+public class EditModel : PageModel
 {
-    public class EditModel : PageModel
-    {
-        private readonly RentBookApp.Data.RentBookDbContext _context;
+    private readonly RentBookApp.Data.RentBookDbContext _context;
 
-        public EditModel(RentBookApp.Data.RentBookDbContext context)
+    public EditModel(RentBookApp.Data.RentBookDbContext context)
+    {
+        _context = context;
+    }
+
+    [BindProperty]
+    public Rental Rental { get; set; } = default!;
+
+    public async Task<IActionResult> OnGetAsync(int? id)
+    {
+        if (id == null)
         {
-            _context = context;
+            return NotFound();
         }
 
-        [BindProperty]
-        public Rental Rentals { get; set; } = default!;
-
-        public async Task<IActionResult> OnGetAsync(int? id)
+        var rental =  await _context.Rentals.FirstOrDefaultAsync(m => m.Id == id);
+        if (rental == null)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            return NotFound();
+        }
+        Rental = rental;
+        ViewData["BookId"] = new SelectList(_context.Books, "Id", "ISBN");
+        ViewData["UserId"] = new SelectList(_context.Users, "Id", "Email");
+        return Page();
+    }
 
-            var rentals =  await _context.Rentals.FirstOrDefaultAsync(m => m.Id == id);
-            if (rentals == null)
-            {
-                return NotFound();
-            }
-            Rentals = rentals;
-           ViewData["BookId"] = new SelectList(_context.Books, "Id", "ISBN");
-           ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id");
+    // To protect from overposting attacks, enable the specific properties you want to bind to.
+    // For more information, see https://aka.ms/RazorPagesCRUD.
+    public async Task<IActionResult> OnPostAsync()
+    {
+        if (!ModelState.IsValid)
+        {
             return Page();
         }
 
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more information, see https://aka.ms/RazorPagesCRUD.
-        public async Task<IActionResult> OnPostAsync()
+        _context.Attach(Rental).State = EntityState.Modified;
+
+        try
         {
-            if (!ModelState.IsValid)
+            if(Rental.ReturnedAt != null)
             {
-                return Page();
-            }
+                var book = _context.Books.FirstOrDefault(b => b.Id == Rental.BookId);
 
-            _context.Attach(Rentals).State = EntityState.Modified;
+                if (book != null)
+                {
+                    book.IsAvailable = true;
+                }
 
-            try
-            {
                 await _context.SaveChangesAsync();
             }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!RentalsExists(Rentals.Id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
 
-            return RedirectToPage("./Index");
         }
-
-        private bool RentalsExists(int id)
+        catch (DbUpdateConcurrencyException)
         {
-            return _context.Rentals.Any(e => e.Id == id);
+            if (!RentalExists(Rental.Id))
+            {
+                return NotFound();
+            }
+            else
+            {
+                throw;
+            }
         }
+
+        return RedirectToPage("./Index");
+    }
+
+    private bool RentalExists(int id)
+    {
+        return _context.Rentals.Any(e => e.Id == id);
     }
 }

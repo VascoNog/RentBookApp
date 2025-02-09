@@ -1,35 +1,38 @@
 ﻿@page
-@model RentBookApp.Pages.AllRentals.CreateModel
+@using System.Security.Claims
+@model RentBookApp.Pages.AddRentals.CreateModel
 
         @{
         ViewData["Title"] = "Create";
+        DateTime todayDate = DateTime.Now;
+        string _userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
         }
         
         <h1>Create</h1>
         
-    <h4>Rentals</h4>
+    <h4>Rental</h4>
     <hr />
     <div class="row">
     <div class="col-md-4">
     <form method="post">
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Rentals.RentedAt" class="control-label"></label>
-                <input asp-for="Rentals.RentedAt" class="form-control" />
-                <span asp-validation-for="Rentals.RentedAt" class="text-danger"></span>
+@*          <div class="form-group">
+                <label asp-for="Rental.RentedAt" class="control-label"></label>
+                <input asp-for="Rental.RentedAt" class="form-control" />
+                <span asp-validation-for="Rental.RentedAt" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Rentals.ReturnedAt" class="control-label"></label>
-                <input asp-for="Rentals.ReturnedAt" class="form-control" />
-                <span asp-validation-for="Rentals.ReturnedAt" class="text-danger"></span>
+                <label asp-for="Rental.ReturnedAt" class="control-label"></label>
+                <input asp-for="Rental.ReturnedAt" class="form-control" />
+                <span asp-validation-for="Rental.ReturnedAt" class="text-danger"></span>
+            </div> *@
+            <div class="form-group">
+                <label asp-for="Rental.BookId" class="control-label"> Book Title </label>
+                <select asp-for="Rental.BookId" class ="form-control" asp-items="ViewBag.BookId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="Rentals.BookId" class="control-label"></label>
-                <select asp-for="Rentals.BookId" class ="form-control" asp-items="ViewBag.BookId"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="Rentals.UserId" class="control-label"></label>
-                <select asp-for="Rentals.UserId" class ="form-control" asp-items="ViewBag.UserId"></select>
+                <label asp-for="Rental.UserId" class="control-label"> Choose Book Owner </label>
+                <select asp-for="Rental.UserId" class ="form-control" asp-items="ViewBag.UserId"></select>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

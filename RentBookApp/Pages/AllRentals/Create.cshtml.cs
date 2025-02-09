@@ -1,26 +1,32 @@
-﻿namespace RentBookApp.Pages.AllRentals;
+﻿using Microsoft.Identity.Client;
+using System.Security.Claims;
+
+namespace RentBookApp.Pages.AddRentals;
 
 [Authorize]
+
 public class CreateModel : PageModel
 {
-    private readonly RentBookApp.Data.RentBookDbContext _context;
+    [BindProperty]
+    public Rental Rental { get; set; }
 
-    public CreateModel(RentBookApp.Data.RentBookDbContext context)
+    private string _userId;
+
+    private readonly BookRepository _bookRepository;
+    public CreateModel(BookRepository bookRepository)
     {
-        _context = context;
+        _bookRepository = bookRepository;
     }
 
     public IActionResult OnGet()
     {
-    ViewData["BookId"] = new SelectList(_context.Books, "Id", "ISBN");
-    ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id");
+        _userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        //ViewData["Books"] = _bookRepository.GetAvailableBooksForRent();
+        ViewData["BookId"] = _bookRepository.GetAvailableBooksForRentSelectItems(_userId);
+        //ViewData["UserId"] = _bookRepository.GetUserSelectItems();
+
         return Page();
     }
-
-    [BindProperty]
-    public Rental Rentals { get; set; } = default!;
-
-    // For more information, see https://aka.ms/RazorPagesCRUD.
     public async Task<IActionResult> OnPostAsync()
     {
         if (!ModelState.IsValid)
@@ -28,8 +34,9 @@ public class CreateModel : PageModel
             return Page();
         }
 
-        _context.Rentals.Add(Rentals);
-        await _context.SaveChangesAsync();
+        await _bookRepository.ChangeCurrentBookAvailabilityToFalse(Rental.BookId);
+        await _bookRepository.AddRental(Rental);
+        await _bookRepository.SaveChangesAsyncInDatabase();
 
         return RedirectToPage("./Index");
     }

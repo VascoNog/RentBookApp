@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using RentBookApp.Data;
 using RentBookApp.Data.Entities;
 
-namespace RentBookApp.Pages.AllRentals
+namespace RentBookApp.Pages.AddRentals
 {
     public class DetailsModel : PageModel
     {
@@ -19,7 +19,7 @@ namespace RentBookApp.Pages.AllRentals
             _context = context;
         }
 
-        public Rental Rentals { get; set; } = default!;
+        public Rental Rental { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -28,11 +28,13 @@ namespace RentBookApp.Pages.AllRentals
                 return NotFound();
             }
 
-            var rentals = await _context.Rentals.FirstOrDefaultAsync(m => m.Id == id);
+            var rental = await _context.Rentals.FirstOrDefaultAsync(m => m.Id == id);
 
-            if (rentals is not null)
+            if (rental is not null)
             {
-                Rentals = rentals;
+
+
+                Rental = rental;
 
                 return Page();
             }

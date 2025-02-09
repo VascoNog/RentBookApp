@@ -11,6 +11,7 @@ public class Book
     public IdentityUser User { get; set; }
     public int AuthorId { get; set; }
     public Author Author { get; set; }
+    public bool IsAvailable { get; set; }
 }
 
 
