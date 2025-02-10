@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RentBookApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a9b0fa39d68667d74e4d3a85f5462e2172db318")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05b620b0246b17c202ee3d98e2440b21dd71d955")]
 [assembly: System.Reflection.AssemblyProductAttribute("RentBookApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RentBookApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

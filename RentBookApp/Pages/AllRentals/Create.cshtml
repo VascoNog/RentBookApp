@@ -4,7 +4,7 @@
 
 @{
     ViewData["Title"] = "Create";
-    var dateToday = DateTime.Now;
+    var dateNow = DateTime.Now;
     string renterId = User.FindFirstValue(ClaimTypes.NameIdentifier); // User Logado e que aluga o livro
 
 }
@@ -18,18 +18,13 @@
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-            <input type="hidden" asp-for="Rental.RentedAt" value="@dateToday" />
+            <input type="hidden" asp-for="Rental.RentedAt" value="@dateNow" />
             <input type="hidden" asp-for="Rental.RenterId" value="@renterId" />
-            
+
             <div class="form-group">
                 <label asp-for="Rental.BookId" class="control-label"> Select a Book Title </label>
                 <select asp-for="Rental.BookId" class="form-control" asp-items="ViewBag.BookId"></select>
             </div>
-
-@*          <div class="form-group">
-                <label asp-for="Rental.UserId" class="control-label"> Select a Book Owner </label>
-                <select asp-for="Rental.UserId" class="form-control" asp-items="ViewBag.UserId"></select>
-            </div> *@
 
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

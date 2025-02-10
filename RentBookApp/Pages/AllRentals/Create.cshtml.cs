@@ -1,5 +1,4 @@
-﻿using Microsoft.Identity.Client;
-using System.Security.Claims;
+﻿using System.Security.Claims;
 
 namespace RentBookApp.Pages.AddRentals;
 
@@ -20,9 +19,7 @@ public class CreateModel : PageModel
     public IActionResult OnGet()
     {
         var _userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-        //ViewData["Books"] = _bookRepository.GetAvailableBooksForRent();
         ViewData["BookId"] = _bookRepository.GetAvailableBooksForRentSelectItems(_userId);
-        //ViewData["UserId"] = _bookRepository.GetUserSelectItems();
 
         return Page();
     }
@@ -33,7 +30,9 @@ public class CreateModel : PageModel
             return Page();
         }
 
+       
         await _bookRepository.ChangeCurrentBookAvailabilityToFalse(Rental.BookId);
+        Rental.UserId = _bookRepository.GetOwnerId(Rental.BookId); // Associar o Owner correspondente
         await _bookRepository.AddRental(Rental);
         await _bookRepository.SaveChangesAsyncInDatabase();
 

@@ -5,7 +5,7 @@
 @{
     ViewData["Title"] = "Edit";
     var dateToday = DateTime.Now;
-    var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+    //var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 }
 
 <h1>Edit</h1>
@@ -15,31 +15,14 @@
 <div class="row">
     <div class="col-md-4">
         <form method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Rental.Id" />
-@*             <div class="form-group">
-                
-                <label asp-for="Rental.RentedAt" class="control-label"></label>
-                <input asp-for="Rental.RentedAt" class="form-control" />
-                <span asp-validation-for="Rental.RentedAt" class="text-danger"></span>
-            </div> *@
-@*             <div class="form-group">
-                
-                <label asp-for="Rental.ReturnedAt" class="control-label"></label>
-                <input asp-for="Rental.ReturnedAt" class="form-control" />
-                <span asp-validation-for="Rental.ReturnedAt" class="text-danger"></span>
-            </div> *@
 
-            <input type="hidden" asp-for="Rental.ReturnedAt" value="@dateToday" />
+            <input type="hidden" asp-for="Rental.Id" />
+            <input type="hidden" asp-for="Rental.RentedAt" />
+            <input type="hidden" asp-for="Rental.ReturnedAt" value="@dateToday" /> @* ATUALIZADO COM DATA DE ENTREGA *@
             <input type="hidden" asp-for="Rental.BookId" />
-        @*     <input type="hidden" asp-for="Rental.RenterId" value="Rental.RenterId" />
- *@
-@*          <div class="form-group">
-                
-                <label asp-for="Rental.UserId" class="control-label"></label>
-                <select asp-for="Rental.UserId" class="form-control" asp-items="ViewBag.UserId"></select>
-                <span asp-validation-for="Rental.UserId" class="text-danger"></span>
-            </div> *@
+            <input type="hidden" asp-for="Rental.UserId" />
+            <input type="hidden" asp-for="Rental.RenterId" />
+
             <div class="form-group">
                 <input type="submit" value="Confirm" class="btn btn-primary" />
             </div>

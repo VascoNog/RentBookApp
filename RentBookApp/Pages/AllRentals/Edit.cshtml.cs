@@ -19,26 +19,25 @@ public class EditModel : PageModel
         {
             return NotFound();
         }
-
         var rental =  await _context.Rentals.FirstOrDefaultAsync(m => m.Id == id);
         if (rental == null)
         {
             return NotFound();
         }
         Rental = rental;
-        ViewData["BookId"] = new SelectList(_context.Books, "Id", "ISBN");
-        ViewData["UserId"] = new SelectList(_context.Users, "Id", "Email");
+        //ViewData["BookId"] = new SelectList(_context.Books, "Id", "ISBN");
+        //ViewData["UserId"] = new SelectList(_context.Users, "Id", "Email");
         return Page();
     }
 
-    // To protect from overposting attacks, enable the specific properties you want to bind to.
-    // For more information, see https://aka.ms/RazorPagesCRUD.
     public async Task<IActionResult> OnPostAsync()
     {
         if (!ModelState.IsValid)
         {
             return Page();
         }
+
+        // execute.update().
 
         _context.Attach(Rental).State = EntityState.Modified;
 
@@ -52,6 +51,7 @@ public class EditModel : PageModel
                 {
                     book.IsAvailable = true;
                 }
+
 
                 await _context.SaveChangesAsync();
             }

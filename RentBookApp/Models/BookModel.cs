@@ -8,6 +8,7 @@ public class BookModel
     public string Publisher { get; set; }
     public DateOnly PublishedAt { get; set; }
     public string ISBN { get; set; }
+    public string OwnerId { get; set; }
     public string OwnerEmail { get; set; }
     public string RenterEmail { get; set; }
     public int AuthorId { get; set; }

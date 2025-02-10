@@ -25,14 +25,8 @@ public class BookRepository
     public SelectList GetUserSelectItems() => new SelectList(_ctx.Users, "Id", "Email");
 
 
-    public SelectList GetAvailableBooksForRentSelectItems(string id) => new SelectList(GetAvailableBooksForRent(id), "Id", "BookAndOwner");
-    //public IList<Book> GetAvailableBooksForRent(string userId)
-    //{
-    //    return (from b in _ctx.Books
-    //            join u in _ctx.Users on b.UserId equals u.Id
-    //            where b.IsAvailable == true && b.UserId != userId
-    //            select b).ToList();
-    //}
+    public SelectList GetAvailableBooksForRentSelectItems(string userId) => new SelectList(GetAvailableBooksForRent(userId), "Id", "BookAndOwner");
+    public SelectList GetAvailableBookOwnersForRentSelectItems(string userId) => new SelectList(GetAvailableBooksForRent(userId), "OwnerId", "OwnerEmail");
 
     public IList<BookModel> GetAvailableBooksForRent(string userId)
     {
@@ -42,34 +36,13 @@ public class BookRepository
                 select new BookModel
                 {
                     Id = b.Id,
-                    Title = b.Title,
-                    Category = b.Category,
-                    Publisher = b.Publisher,
-                    PublishedAt = b.PublishedAt,
-                    ISBN = b.ISBN,
-                    AuthorId = b.AuthorId,
-                    IsAvailable = b.IsAvailable,
-                    OwnerEmail = _ctx.Users.FirstOrDefault(u => u.Id == userId).Email,
-                    BookAndOwner = $"{b.Title} - {u.Email}"
-                }).ToList();
+                    BookAndOwner = $"{b.Title} - {b.User.Email}",
+                    OwnerEmail = u.Email,
+                    //OwnerId = b.UserId,
+                })
+                .ToList();
     }
-    //public string GetOwnerEmail(string userId) => _ctx.Users.FirstOrDefault(u => u.Id == userId).Email;
 
-
-    //public async Task<List<BookModel>> GetBooksAsync()
-    //{
-    //    return await (from b in _ctx.Books
-    //                  join u in _ctx.Users on b.UserId equals u.Id
-    //                  select new BookModel
-    //                  {
-    //                      Id = b.Id,
-    //                      Title = b.Title,
-    //                      Isbn = b.Isbn,
-    //                      Category = b.Category,
-    //                      UserId = b.UserId,
-    //                      UserEmail = u.Email,
-    //                  }).ToListAsync();
-    //}
 
     public async Task<IList<Book>> GetAllBooksAsync() => await _ctx.Books
          .Include(b => b.Author)
@@ -130,4 +103,8 @@ public class BookRepository
     }
 
     //ChangeCurrentBookAvailability(Rental.BookId);
+
+
+    public string GetOwnerId(int bookId) => _ctx.Books.FirstOrDefault(b => b.Id == bookId).UserId;
+
 }
