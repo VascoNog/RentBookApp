@@ -1,8 +1,11 @@
 ﻿@page
+@using System.Security.Claims
 @model RentBookApp.Pages.AddRentals.EditModel
 
 @{
     ViewData["Title"] = "Edit";
+    var dateToday = DateTime.Now;
+    var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 }
 
 <h1>Edit</h1>
@@ -20,14 +23,17 @@
                 <input asp-for="Rental.RentedAt" class="form-control" />
                 <span asp-validation-for="Rental.RentedAt" class="text-danger"></span>
             </div> *@
-            <div class="form-group">
+@*             <div class="form-group">
                 
                 <label asp-for="Rental.ReturnedAt" class="control-label"></label>
                 <input asp-for="Rental.ReturnedAt" class="form-control" />
                 <span asp-validation-for="Rental.ReturnedAt" class="text-danger"></span>
-            </div>
-                <input type="hidden" asp-for="Rental.BookId" />
+            </div> *@
 
+            <input type="hidden" asp-for="Rental.ReturnedAt" value="@dateToday" />
+            <input type="hidden" asp-for="Rental.BookId" />
+        @*     <input type="hidden" asp-for="Rental.RenterId" value="Rental.RenterId" />
+ *@
 @*          <div class="form-group">
                 
                 <label asp-for="Rental.UserId" class="control-label"></label>
@@ -35,7 +41,7 @@
                 <span asp-validation-for="Rental.UserId" class="text-danger"></span>
             </div> *@
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Confirm" class="btn btn-primary" />
             </div>
         </form>
     </div>

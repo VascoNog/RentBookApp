@@ -1,5 +1,6 @@
 ﻿namespace RentBookApp.Pages.AddRentals;
 
+[Authorize]
 public class EditModel : PageModel
 {
     private readonly RentBookApp.Data.RentBookDbContext _context;

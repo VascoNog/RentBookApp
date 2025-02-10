@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Protocols.Configuration;
+using RentBookApp.Models;
 using System.Security.Claims;
 
 namespace RentBookApp.Data.Repositories;
@@ -24,13 +25,35 @@ public class BookRepository
     public SelectList GetUserSelectItems() => new SelectList(_ctx.Users, "Id", "Email");
 
 
-    public SelectList GetAvailableBooksForRentSelectItems(string id) => new SelectList(GetAvailableBooksForRent(id), "Id", "Title");
-    public IList<Book> GetAvailableBooksForRent(string userId)
+    public SelectList GetAvailableBooksForRentSelectItems(string id) => new SelectList(GetAvailableBooksForRent(id), "Id", "BookAndOwner");
+    //public IList<Book> GetAvailableBooksForRent(string userId)
+    //{
+    //    return (from b in _ctx.Books
+    //            join u in _ctx.Users on b.UserId equals u.Id
+    //            where b.IsAvailable == true && b.UserId != userId
+    //            select b).ToList();
+    //}
+
+    public IList<BookModel> GetAvailableBooksForRent(string userId)
     {
         return (from b in _ctx.Books
+                join u in _ctx.Users on b.UserId equals u.Id
                 where b.IsAvailable == true && b.UserId != userId
-                select b).ToList();
+                select new BookModel
+                {
+                    Id = b.Id,
+                    Title = b.Title,
+                    Category = b.Category,
+                    Publisher = b.Publisher,
+                    PublishedAt = b.PublishedAt,
+                    ISBN = b.ISBN,
+                    AuthorId = b.AuthorId,
+                    IsAvailable = b.IsAvailable,
+                    OwnerEmail = _ctx.Users.FirstOrDefault(u => u.Id == userId).Email,
+                    BookAndOwner = $"{b.Title} - {u.Email}"
+                }).ToList();
     }
+    //public string GetOwnerEmail(string userId) => _ctx.Users.FirstOrDefault(u => u.Id == userId).Email;
 
 
     //public async Task<List<BookModel>> GetBooksAsync()

@@ -1,5 +1,6 @@
 ﻿namespace RentBookApp.Pages.AddRentals;
 
+[Authorize]
 public class IndexModel : PageModel
 {
     private readonly BookRepository _bookRepository;

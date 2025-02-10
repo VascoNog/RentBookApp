@@ -1,4 +1,5 @@
 ﻿@page
+@using System.Security.Claims
 @model RentBookApp.Pages.AddRentals.IndexModel
 
 @{
@@ -10,51 +11,30 @@
 <p>
     <a asp-page="Create">New rental</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Rentals[0].RentedAt)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Rentals[0].ReturnedAt)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Rentals[0].Book)
-            </th>
-            <th>
-                Book Owner
-            </th>
-            <th>
-                Rented By
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model.Rentals) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.RentedAt)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ReturnedAt)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Book.ISBN)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.User.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.User.Email)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
-@*              <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a> *@
-            </td>
-        </tr>
+@foreach (var item in Model.Rentals)
+{
+    if (item.RenterId == User.FindFirstValue(ClaimTypes.NameIdentifier))
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.Rentals[0].RentedAt)</th>
+                    <th>@Html.DisplayNameFor(model => model.Rentals[0].ReturnedAt)</th>
+                    <th>@Html.DisplayNameFor(model => model.Rentals[0].Book)</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.RentedAt)</td>
+                    <td>@Html.DisplayFor(modelItem => item.ReturnedAt)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Book.Title)</td>
+                    <td>
+                        <a asp-page="./Edit" asp-route-id="@item.Id">Return Book</a> |
+                        <a asp-page="./Details" asp-route-id="@item.Id">Details</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    }
 }
-    </tbody>
-</table>

@@ -12,7 +12,11 @@ public class Rental
     public int BookId { get; set; }
     public Book Book { get; set; }
 
-    // FK UserId
+    // FK UserId - BOOK Owner
     public string UserId { get; set; }
     public  IdentityUser User { get; set; }
+
+    // FK RenterId - Person who rented the book
+    public string RenterId { get; set; }
+    public IdentityUser Renter { get; set; }
 }

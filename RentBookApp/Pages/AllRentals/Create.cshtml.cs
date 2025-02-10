@@ -10,7 +10,6 @@ public class CreateModel : PageModel
     [BindProperty]
     public Rental Rental { get; set; }
 
-    private string _userId;
 
     private readonly BookRepository _bookRepository;
     public CreateModel(BookRepository bookRepository)
@@ -20,7 +19,7 @@ public class CreateModel : PageModel
 
     public IActionResult OnGet()
     {
-        _userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        var _userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
         //ViewData["Books"] = _bookRepository.GetAvailableBooksForRent();
         ViewData["BookId"] = _bookRepository.GetAvailableBooksForRentSelectItems(_userId);
         //ViewData["UserId"] = _bookRepository.GetUserSelectItems();
